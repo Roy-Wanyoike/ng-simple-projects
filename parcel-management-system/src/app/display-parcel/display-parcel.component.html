@@ -1,0 +1,10 @@
+<div class="container">
+    
+    <div class="displayParcel" *ngFor="let item of parcel"  >
+       <p>{{item.name}}</p>
+       <p>{{item.Destination}</p>
+       <p>{{item.email}}</p>
+       <button type="submit">Update Parcel</button>
+       <button type="button" (click)="updateParcel(item)">Update Parcel</button>
+    </div>
+</div>
